@@ -5,8 +5,15 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>GamingHobbie</title>
 <style>
+    body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url("img.jpg") no-repeat center center !important;
+    background-size: cover !important;
+}
     html, body { margin:0; padding:0; background:#0b0d10; color:#c8ced8;
-                 font:15px/1.45 "Segoe UI", system-ui, sans-serif; }
+                 font:15px/1.45 "Segoe UI", system-ui, sans-serif; height: 100%;}
     #wrap { padding:16px 18px; }
     #state { font-size:22px; font-weight:700; margin:0 0 6px; }
     #det { font-size:13px; color:#8b95a3; margin:0 0 4px; }
@@ -23,15 +30,21 @@
   </style>
 </head>
 <body>
-<div id="brand"><img src="logo-23.png" alt="" width="150" height="90">
-    <b><span style="color: #d8c07f;">Lieu:</span> Ankadindramamy arrêt bus total</b>
-    <b><span style="color: #d8c07f;">Téléphone:</span> 034 86 525 94</b>
+<div id="brand">
+    <img src="logo-23.png" alt="" width="150" height="90">
+    <b>Jailbreak PS4 version 13.02 à 13.52 Goldhen</b>
 </div>
-<div id="wrap">
+<div id="wrap" style="display: flex;flex-direction: column;justify-content: center;align-items: center;flex: 1;">
   <div id="state">detecting firmware...</div>
   <div id="det"></div>
   <div id="cache"></div>
 </div>
+<footer style="text-align: center;margin-top: auto; padding: 50px; font-size: 25px;">
+    <div>
+        <b><span style="color: #d8c07f;">Lieu:</span> Ankadindramamy arrêt bus total</b>
+        <b><span style="color: #d8c07f;">Téléphone:</span> 034 86 525 94</b>
+    </div>
+</footer>
 
 <script>
 (function () {

@@ -16,6 +16,14 @@
           15px/1.45 "Segoe UI",
           system-ui,
           sans-serif;
+          height: 100%;
+      }
+      body {
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+          background: url("img.jpg") no-repeat center center !important;
+          background-size: cover !important;
       }
       #brand {
         text-align: center;
@@ -135,14 +143,8 @@
   </head>
   <body>
     <div id="brand">
-      <img
-        src="logo-23.png"
-        alt=""
-        width="150"
-        height="90"
-      />
-      <b><span style="color: #d8c07f;">Lieu:</span> Ankadindramamy arrêt bus total</b>
-      <b><span style="color: #d8c07f;">Téléphone:</span> 034 86 525 94</b>
+      <img src="logo-23.png" alt="" width="150" height="90">
+    <b>Jailbreak PS4 version 13.02 à 13.52 Goldhen</b>
     </div>
     <div id="spin"></div>
     <div id="msg">Restart your console</div>
@@ -150,6 +152,12 @@
       <div id="state"></div>
       <div id="out"></div>
     </div>
+    <footer style="text-align: center;margin-top: auto; padding: 50px; font-size: 25px;">
+      <div>
+          <b><span style="color: #d8c07f;">Lieu:</span> Ankadindramamy arrêt bus total</b>
+          <b><span style="color: #d8c07f;">Téléphone:</span> 034 86 525 94</b>
+      </div>
+  </footer>
     <script type="module">
       import "./jb.js?v=10";
     </script>
